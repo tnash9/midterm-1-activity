@@ -79,7 +79,7 @@ A natural place to start is with our outer loop. The loop executes from 0 to n -
 
 We now need to come up with a way to take what we just covered and represent it as a summation. We will execute our summation from i = 1 to n since our outer loop executes n times. All that's left to do in this step is to decide what goes inside the summation. As we determined above, our inner loop executes one additional time for every time our outer loop executes, so our inner loop will look something like this: `(1 + 2 + ... + n)`.
 
-Finally, we compile all of the information we've gathered to create our actual summation. As you may have figured out by now, it is: 
+Finally, we compile all of the information we've gathered to create our actual summation. As you may have figured out by now, it is (img-1): 
 $$\sum_{i=1}^{n} i$$
 Now we're finally ready to figure out our algorithm's order of growth!
 
@@ -89,11 +89,11 @@ Now we're finally ready to figure out our algorithm's order of growth!
 
 The final step in algorithm analysis is to determine the order of growth of our algorithm––the whole reason we analyzed it in the first place! We'll use the formulas and rules of sum manipulation to get our final answer, so it may be helpful to have your *Important Summation Formulas* sheet handy.
 
-A quick glance at the sheet should make it apparent that it has exactly what we need. Formula 2 says the following:
+A quick glance at the sheet should make it apparent that it has exactly what we need. Formula 2 says the following (img-2):
 $$\sum_{i=1}^{n} i = 1 + 2 + ... + n = \frac{n(n + 1)}{2} = \frac{1}{2}n^2-\frac{1}{2}n$$
 This matches up exactly with the sumnation we found in step 4. All that's left now is to take $\frac{1}{2}n^2$, the most simplified form of the sumnation, and use it to determine our order of growth. 
 
-As you may know, when determining the order of growth, we want to ignore all lower order terms, as the term with the highest order is the one that will ultimately determine our asymptotical runtime. This means we can drop $\frac{1}{2}n$, leaving us with $\frac{1}{2}n^2$.
+(This entire section is in img-3) As you may know, when determining the order of growth, we want to ignore all lower order terms, as the term with the highest order is the one that will ultimately determine our asymptotical runtime. This means we can drop $\frac{1}{2}n$, leaving us with $\frac{1}{2}n^2$.
 
 We can also ignore leading constants for similar reasoning. This means we'll drop $\frac{1}{2}$, leaving us with just $n^2$. We've now simplified as far as we can and what we're left with is the order of growth for our algorithm.
 
