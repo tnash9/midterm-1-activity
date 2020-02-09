@@ -16,7 +16,7 @@ There are absolutely cases that lend themselves to recursion, but in practice (a
 
 <br>
 
-#### Iterative $\xleftrightarrow{}$ Recursive
+#### Iterative $\xleftrightarrow{}$ Recursive (img-4)
 Adapting Val's guidelines for translating recursive functions to iterative, I will lay out a simple, general guide for converting between iterative and recursive functions.
 
 <br>
