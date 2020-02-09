@@ -34,6 +34,7 @@ function sort(arr) {
 ```
 
 <br>
+
 #### Step 1:
 
 Our algorithm takes in an array, sorts it, and returns the sorted array. It seems obvious that our parameter `n`, which will indicate the algorithm's input size, will be related somehow to our array. 
@@ -43,6 +44,7 @@ As you may have already determined, we will say `n = arr.length`. In nearly all 
 Now that we've determined our input size, we can move on to establishing a basic operation.
 
 <br>
+
 #### Step 2:
 
 In step 2, we need to determine which operation(s) to use as our basic operation. This is the operation that actually does the work of our algorithm, and is generally located in the inner-most loop. 
@@ -52,6 +54,7 @@ In looking at our sorting algorithm, we have a couple of options for the basic o
 We have now established an input size and a basic operation. At this point, we can move into the more complicated stages of algorithm analysis.
 
 <br>
+
 #### Step 3:
 
 This step involves some deeper thinking than the previous two. We are going to whether the number of times that our basic operation executes is dependent only on the size of our input, or if other factors contribute to how many times we execute our basic operation.
@@ -65,6 +68,7 @@ Had our basic operation been swaps rather than comparisons, we would have to eva
 We have now completed all of the setup for our algorithm analysis and can finally find a sum to express the number of times our basic operation executes.
 
 <br>
+
 #### Step 4:
 
 I hope you're as excited as I am to finally get into the meat of algorithm analysis. We have finally gotten to the point where we can set up our sum, which will allow us to determine our algorithm's order of growth in our final step.
@@ -80,6 +84,7 @@ $$\sum_{i=1}^{n} i$$
 Now we're finally ready to figure out our algorithm's order of growth!
 
 <br>
+
 #### Step 5:
 
 The final step in algorithm analysis is to determine the order of growth of our algorithm––the whole reason we analyzed it in the first place! We'll use the formulas and rules of sum manipulation to get our final answer, so it may be helpful to have your *Important Summation Formulas* sheet handy.
