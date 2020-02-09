@@ -1,7 +1,7 @@
-#<p align="center">Algorithm Analysis<p>
-##<p align="center">Tutorial by Tanner Nash<p>
+# Algorithm Analysis
+## Tutorial by Tanner Nash
+
 <br>
-<b>
 We will be using Val's 5 Step Algorithm Analysis plan for nonrecursive functions. The steps are listed below.
 
 ### Step 1: Decide on a parameter indicating the algorithm's input size
@@ -34,7 +34,9 @@ function sort(arr) {
 ```
 
 <br>
+
 #### Step 1:
+
 Our algorithm takes in an array, sorts it, and returns the sorted array. It seems obvious that our parameter `n`, which will indicate the algorithm's input size, will be related somehow to our array. 
 
 As you may have already determined, we will say `n = arr.length`. In nearly all algorithms that work with arrays or similar data structures, the size of our input will be the length.
@@ -42,7 +44,9 @@ As you may have already determined, we will say `n = arr.length`. In nearly all 
 Now that we've determined our input size, we can move on to establishing a basic operation.
 
 <br>
+
 #### Step 2:
+
 In step 2, we need to determine which operation(s) to use as our basic operation. This is the operation that actually does the work of our algorithm, and is generally located in the inner-most loop. 
 
 In looking at our sorting algorithm, we have a couple of options for the basic operation. The main things that are happening are we are comparing two values, and then *potentially* swapping those values. We could use either of these actions as our basic operation, but because the comparison (line 4) happens *every* time our inner loop executes, we'll choose that as our basic operation.
@@ -50,7 +54,9 @@ In looking at our sorting algorithm, we have a couple of options for the basic o
 We have now established an input size and a basic operation. At this point, we can move into the more complicated stages of algorithm analysis.
 
 <br>
+
 #### Step 3:
+
 This step involves some deeper thinking than the previous two. We are going to whether the number of times that our basic operation executes is dependent only on the size of our input, or if other factors contribute to how many times we execute our basic operation.
 
 Essentially, what we are doing in step 3 is determining if we can assess our algorithm only once, or if we need to investigate the best, worst, and average cases.
@@ -62,7 +68,9 @@ Had our basic operation been swaps rather than comparisons, we would have to eva
 We have now completed all of the setup for our algorithm analysis and can finally find a sum to express the number of times our basic operation executes.
 
 <br>
+
 #### Step 4:
+
 I hope you're as excited as I am to finally get into the meat of algorithm analysis. We have finally gotten to the point where we can set up our sum, which will allow us to determine our algorithm's order of growth in our final step.
 
 Recall from step 2 that we determined our basic operation to be the comparison on line 4. Keeping this in mind, we now need to figure out an equation to represent how many times this comparison happens when we run our algorithm on an array of length `n`.
@@ -76,7 +84,9 @@ $$\sum_{i=1}^{n} i$$
 Now we're finally ready to figure out our algorithm's order of growth!
 
 <br>
-####Step 5:
+
+#### Step 5:
+
 The final step in algorithm analysis is to determine the order of growth of our algorithm––the whole reason we analyzed it in the first place! We'll use the formulas and rules of sum manipulation to get our final answer, so it may be helpful to have your *Important Summation Formulas* sheet handy.
 
 A quick glance at the sheet should make it apparent that it has exactly what we need. Formula 2 says the following:
